@@ -21,6 +21,7 @@ pipeline end to end.
 ## Setup
 
 ```bash
+cd rag
 docker compose up -d
 pip install -r requirements.txt
 cp .env.example .env   # then fill in ANTHROPIC_API_KEY
