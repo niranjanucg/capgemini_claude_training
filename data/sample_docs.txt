@@ -1,0 +1,15 @@
+Capgemini is a global leader in consulting, technology services, and digital transformation, headquartered in Paris, France.
+
+Retrieval-Augmented Generation (RAG) combines a retrieval step over a knowledge base with a generative language model, so answers are grounded in retrieved evidence instead of relying only on the model's parametric memory.
+
+Vector embeddings map text into a high-dimensional numeric space where semantically similar pieces of text end up close together, which is what makes similarity search possible.
+
+pgvector is a PostgreSQL extension that adds a native vector column type and similarity search operators (L2, cosine, inner product), letting teams run vector search inside an existing Postgres database.
+
+Claude is Anthropic's family of large language models, accessible through the Messages API, and is well suited to the generation step of a RAG pipeline because it can be instructed to answer strictly from supplied context.
+
+A typical RAG pipeline has three stages: ingest documents and store their embeddings, retrieve the most relevant chunks for a given query, and generate a final answer by passing the retrieved chunks to an LLM as context.
+
+Chunking strategy affects retrieval quality: chunks that are too large dilute relevance signal, while chunks that are too small lose surrounding context, so most production systems tune chunk size and overlap empirically.
+
+Cosine similarity measures the angle between two vectors rather than their magnitude, which makes it a common choice for comparing normalized text embeddings.

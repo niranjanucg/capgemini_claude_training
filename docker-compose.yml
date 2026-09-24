@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: ankane/pgvector:latest
+    environment:
+      POSTGRES_USER: rag_demo
+      POSTGRES_PASSWORD: rag_demo
+      POSTGRES_DB: rag_demo
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data
+
+volumes:
+  pgvector_data:
