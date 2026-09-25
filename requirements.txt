@@ -1,0 +1,5 @@
+# Pinned for a reproducible, beginner-safe setup.
+# NOTE: sqlite3 ships with the Python standard library, so it is NOT listed here.
+# The ONLY runtime dependencies for the Day 1 naive spike are:
+openai==1.51.2          # runtime: the app calls the OpenAI API to generate SQL
+python-dotenv==1.0.1    # loads OPENAI_API_KEY from your local .env file
